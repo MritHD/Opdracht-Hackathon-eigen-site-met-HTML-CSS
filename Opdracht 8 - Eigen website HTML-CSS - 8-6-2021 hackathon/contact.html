@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Contactformulier </title>
+</head>
+
+<body>
+    <div class="titel">
+        <header>
+            <h1>Contactformulier</h1>
+            <nav>
+                <ul>
+                    <li><a class="button" href="index.html" target="blank">Homepage</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <main>
+        <div class="containter1">
+            <div class="mijncontact">
+                <h2>Wil je wat met mij delen? Dat kan via dit formulier.</h2>
+                <form class="my-contact" name="contact" method="POST" data-netlify="true">
+                    <div>
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name">
+                    </div><br>
+                    <div>
+                        <label for="email">E-mailadres </label>
+                        <input type="email" id="email" name="email">
+                    </div><br>
+                    <div>
+                        <label for="phone">Telefoonnummer </label>
+                        <input type="tel" id="phone" name="phone">
+                    </div><br>
+                    <div>
+                        <label>Brand los!</label><textarea name="omschrijving" rows="10" cls="20"></textarea>
+                    </div>
+                    <div>
+                        <label for="myfile">Upload hier eventueel een foto of andere file </label>
+                        <input type="file" id="myfile" name="myfile">
+                    </div><br>
+
+                    <div>
+                        <label for="homepage">URL van je website of kampeerblog</label>
+                        <input type="url" id="homepage" name="homepage">
+                    </div><br>
+                </form>
+            </div>
+            <hr>
+
+            <div class="onderzoek">
+                <h1> Doe mee! Onderzoekje</h1>
+                <br>
+                <form name="contact" method="POST" data-netlify="true">
+                    <h2>Ik doe een klein onderzoekje naar favoriete
+                        vakantiebestemmingen op basis van leeftijd en geslacht. Zou je deze vragenlijst willen invullen?
+                        Alvast
+                        bedankt!</h2><br>
+                    <hr>
+                    <div>
+                        <label for="quantity">
+                            Leeftijd
+                        </label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="100">
+                    </div><br>
+                    <div>
+                        <label>
+                            Geslacht
+                        </label><br>
+                        <input type="radio" id="man" name="geslacht" value="man"> <label for="man">
+                            Man
+                        </label><br>
+                        <input type="radio" id="vrouw" name="geslacht" value="vrouw"> <label for="vrouw">
+                            Vrouw
+                        </label><br>
+                        <input type="radio" id="anders" name="geslacht" value="anders"> <label for="anders">
+                            Anders</label>
+                    </div><br>
+
+                    <div>
+                        <label> Favoriete vakantiebestemming</label><br>
+                        <input type="checkbox" id="België" name="favbestemming" value="België"><label
+                            for="België">België</label><br>
+                        <input type="checkbox" id="Luxemburg" name="favbestemming" value="Luxemburg"><label
+                            for="Luxemburg">Luxemburg</label><br>
+                        <input type="checkbox" id="Nederland" name="favbestemming" value="Nederland"><label
+                            for="Nederland">Nederland</label><br>
+                        <input type="checkbox" id="Duitsland" name="favbestemming" value="Duitsland"><label
+                            for="Duitsland">Duitsland</label><br>
+                        <input type="checkbox" id="Frankrijk" name="favbestemming" value="Frankrijk"><label
+                            for="Frankrijk">Frankrijk</label>
+                    </div><br>
+
+                    <div>
+                        <label>Opmerkingen</label><br><textarea name="omschrijving" rows="10" cls="20"></textarea>
+                    </div>
+                    <div>
+                        <input type="reset">
+                        <button type="submit">Verstuur</button>
+                    </div><br>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a class="button" href="index.html" target="indx.html">Homepage</a>
+    </footer>
+</body>
+
+</html>
